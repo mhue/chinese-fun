@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chinese Characters Fun</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        #character { font-size: 48px; margin-top: 20px; }
+        input, button { padding: 10px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Explore Chinese Characters!</h1>
+    <div id="character">汉字</div>
+    <input type="text" id="inputChar" placeholder="Enter a Chinese character">
+    <button onclick="showCharacter()">Show Character</button>
+
+    <script>
+        function showCharacter() {
+            var char = document.getElementById('inputChar').value;
+            if (char) {
+                document.getElementById('character').textContent = char;
+            }
+        }
+    </script>
+</body>
+</html>
